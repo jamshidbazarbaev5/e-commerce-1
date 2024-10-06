@@ -65,7 +65,7 @@ const App: React.FC = () => {
           <Route path="/product/:id" element={<ProductDetail />} />
         </Routes>
 
-        {!isUserListPage && isDetailsPage && (
+        {!isUserListPage  &&  (
           <button
             onClick={() => setIsCartOpen(true)}
             className="fixed bottom-4 right-4 bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full shadow-lg"
